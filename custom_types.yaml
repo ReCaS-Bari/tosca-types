@@ -3514,6 +3514,10 @@ node_types:
   tosca.nodes.indigo.DockerCompose:
     derived_from: tosca.nodes.SoftwareComponent
     properties:
+      docker_compose_version:
+        type: version
+        required: no
+        default: 1.24.1
       docker_compose_file_url:
         type: string
         required: yes
